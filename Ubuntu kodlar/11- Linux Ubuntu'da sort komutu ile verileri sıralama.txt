@@ -1,0 +1,264 @@
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  python.py  text.txt  yeni.txt
+mehmet@MEHMET-KARA:~/echo$ cat deneme.txt
+dünya
+
+ali
+burak
+sel
+m
+zeynep
+mehmet
+isa
+furkan
+tolga
+mehmet@MEHMET-KARA:~/echo$ sort deneme.txt
+
+ali
+burak
+dünya
+furkan
+isa
+m
+mehmet
+sel
+tolga
+zeynep
+mehmet@MEHMET-KARA:~/echo$ sort -r deneme.txt
+zeynep
+tolga
+sel
+mehmet
+m
+isa
+furkan
+dünya
+burak
+ali
+
+mehmet@MEHMET-KARA:~/echo$ sort --help
+Usage: sort [OPTION]... [FILE]...
+  or:  sort [OPTION]... --files0-from=F
+Write sorted concatenation of all FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+Ordering options:
+
+  -b, --ignore-leading-blanks  ignore leading blanks
+  -d, --dictionary-order      consider only blanks and alphanumeric characters
+  -f, --ignore-case           fold lower case to upper case characters
+  -g, --general-numeric-sort  compare according to general numerical value
+  -i, --ignore-nonprinting    consider only printable characters
+  -M, --month-sort            compare (unknown) < 'JAN' < ... < 'DEC'
+  -h, --human-numeric-sort    compare human readable numbers (e.g., 2K 1G)
+  -n, --numeric-sort          compare according to string numerical value
+  -R, --random-sort           shuffle, but group identical keys.  See shuf(1)
+      --random-source=FILE    get random bytes from FILE
+  -r, --reverse               reverse the result of comparisons
+      --sort=WORD             sort according to WORD:
+                                general-numeric -g, human-numeric -h, month -M,
+                                numeric -n, random -R, version -V
+  -V, --version-sort          natural sort of (version) numbers within text
+
+Other options:
+
+      --batch-size=NMERGE   merge at most NMERGE inputs at once;
+                            for more use temp files
+  -c, --check, --check=diagnose-first  check for sorted input; do not sort
+  -C, --check=quiet, --check=silent  like -c, but do not report first bad line
+      --compress-program=PROG  compress temporaries with PROG;
+                              decompress them with PROG -d
+      --debug               annotate the part of the line used to sort,
+                              and warn about questionable usage to stderr
+      --files0-from=F       read input from the files specified by
+                            NUL-terminated names in file F;
+                            If F is - then read names from standard input
+  -k, --key=KEYDEF          sort via a key; KEYDEF gives location and type
+  -m, --merge               merge already sorted files; do not sort
+  -o, --output=FILE         write result to FILE instead of standard output
+  -s, --stable              stabilize sort by disabling last-resort comparison
+  -S, --buffer-size=SIZE    use SIZE for main memory buffer
+  -t, --field-separator=SEP  use SEP instead of non-blank to blank transition
+  -T, --temporary-directory=DIR  use DIR for temporaries, not $TMPDIR or /tmp;
+                              multiple options specify multiple directories
+      --parallel=N          change the number of sorts run concurrently to N
+  -u, --unique              with -c, check for strict ordering;
+                              without -c, output only the first of an equal run
+  -z, --zero-terminated     line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+KEYDEF is F[.C][OPTS][,F[.C][OPTS]] for start and stop position, where F is a
+field number and C a character position in the field; both are origin 1, and
+the stop position defaults to the line's end.  If neither -t nor -b is in
+effect, characters in a field are counted from the beginning of the preceding
+whitespace.  OPTS is one or more single-letter ordering options [bdfgiMhnRrV],
+which override global ordering options for that key.  If no key is given, use
+the entire line as the key.  Use --debug to diagnose incorrect key usage.
+
+SIZE may be followed by the following multiplicative suffixes:
+% 1% of memory, b 1, K 1024 (default), and so on for M, G, T, P, E, Z, Y.
+
+*** WARNING ***
+The locale specified by the environment affects sort order.
+Set LC_ALL=C to get the traditional sort order that uses
+native byte values.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/sort>
+or available locally via: info '(coreutils) sort invocation'
+mehmet@MEHMET-KARA:~/echo$ sort -R deneme.txt
+mehmet
+tolga
+dünya
+burak
+isa
+sel
+zeynep
+ali
+
+m
+furkan
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  python.py  text.txt  yeni.txt
+mehmet@MEHMET-KARA:~/echo$ cat abcd
+merhaba
+mehmet@MEHMET-KARA:~/echo$ cat >> abcd
+ahmet yılmaz 78
+anıl bardak 60
+mehmet kara 100
+halil hasan 20
+elif gende 88mehmet@MEHMET-KARA:~/echo$
+mehmet@MEHMET-KARA:~/echo$ car abcd
+Command 'car' not found, but can be installed with:
+sudo apt install ucommon-utils
+mehmet@MEHMET-KARA:~/echo$ cat abcd
+merhaba
+ahmet yılmaz 78
+anıl bardak 60
+mehmet kara 100
+hal il k hasan 20
+elif gende 88mehmet@MEHMET-KARA:~/echo$
+mehmet@MEHMET-KARA:~/echo$ sort -k abcd
+sort: invalid number at field start: invalid count at start of ‘abcd’
+mehmet@MEHMET-KARA:~/echo$ sort -k1 abcd
+ahmet yılmaz 78
+anıl bardak 60
+elif gende 88
+hal il k hasan 20
+mehmet kara 100
+merhaba
+mehmet@MEHMET-KARA:~/echo$ #ilk boşluk a kadar olan koluna göre sıraladı
+mehmet@MEHMET-KARA:~/echo$ sort -k2 abcd
+merhaba
+anıl bardak 60
+elif gende 88
+mehmet kara 100
+hal il k hasan 20
+ahmet yılmaz 78
+mehmet@MEHMET-KARA:~/echo$ 2. lokasyona göre sıraladık yani soy isme göre
+2.: command not found
+mehmet@MEHMET-KARA:~/echo$ sort -k3  abcd
+merhaba
+mehmet kara 100
+hal il k hasan 20
+anıl bardak 60
+ahmet yılmaz 78
+elif gende 88
+mehmet@MEHMET-KARA:~/echo$ sort -k3r abcd
+elif gende 88
+ahmet yılmaz 78
+anıl bardak 60
+hal il k hasan 20
+mehmet kara 100
+merhaba
+mehmet@MEHMET-KARA:~/echo$ sort -k3  abcd
+merhaba
+mehmet kara 100
+hal il k hasan 20
+anıl bardak 60
+ahmet yılmaz 78
+elif gende 88
+mehmet@MEHMET-KARA:~/echo$ cat
+mehmet@MEHMET-KARA:~/echo$ sl
+Command 'sl' not found, but can be installed with:
+sudo apt install sl
+mehmet@MEHMET-KARA:~/echo$ cd ..
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas2    myfile1    ubuntukodlar.txt
+birinci  echo            klas3    myproject
+dosya    gizliklasor2    klasor1  snap
+mehmet@MEHMET-KARA:~$ cd echo/
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  python.py  text.txt  yeni.txt
+mehmet@MEHMET-KARA:~/echo$ cat abcd
+merhaba
+ahmet yılmaz 78
+anıl bardak 60
+mehmet kara 100
+hal il k hasan 20
+elif gende 88mehmet@MEHMET-KARA:~/echo$ cat > abcd
+ahmet yılmaz 78
+anıl bardak 60
+mehmet kara 100
+hal il k hasan 20
+mehmet@MEHMET-KARA:~/echo$ cat abcd
+ahmet yılmaz 78
+anıl bardak 60
+mehmet kara 100
+hal il k hasan 20
+mehmet@MEHMET-KARA:~/echo$ sort -k3 abcd
+mehmet kara 100
+hal il k hasan 20
+anıl bardak 60
+ahmet yılmaz 78
+mehmet@MEHMET-KARA:~/echo$ sort -k1 abcd
+ahmet yılmaz 78
+anıl bardak 60
+hal il k hasan 20
+mehmet kara 100
+mehmet@MEHMET-KARA:~/echo$ sort -k2 abcd
+anıl bardak 60
+mehmet kara 100
+hal il k hasan 20
+ahmet yılmaz 78
+mehmet@MEHMET-KARA:~/echo$ sort -k3 abcd
+mehmet kara 100
+hal il k hasan 20
+anıl bardak 60
+ahmet yılmaz 78
+mehmet@MEHMET-KARA:~/echo$ sort -k3r abcd
+ahmet yılmaz 78
+anıl bardak 60
+hal il k hasan 20
+mehmet kara 100
+mehmet@MEHMET-KARA:~/echo$ cat deneme.txt
+dünya
+
+ali
+burak
+sel
+m
+zeynep
+mehmet
+isa
+furkan
+tolga
+mehmet@MEHMET-KARA:~/echo$ sort deneme.txt
+
+ali
+burak
+dünya
+furkan
+isa
+m
+mehmet
+sel
+tolga
+zeynep
+mehmet@MEHMET-KARA:~/echo$ sort -uc deneme.txt
+sort: deneme.txt:2: disorder:
+mehmet@MEHMET-KARA:~/echo$

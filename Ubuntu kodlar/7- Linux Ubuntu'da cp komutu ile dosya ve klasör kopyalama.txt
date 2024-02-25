@@ -1,0 +1,53 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+abc      dosya           gizliklasor2  klas3    myfile1    snap
+birinci  dosyaolusturur  klas2         klasor1  myproject  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$  cd A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ cd C
+mehmet@MEHMET-KARA:~/myproject/A/C$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/myproject/A/C$ ls
+2.py  3.pdf
+mehmet@MEHMET-KARA:~/myproject/A/C$ cp 2.py python.py
+mehmet@MEHMET-KARA:~/myproject/A/C$ ls
+2.py  3.pdf  python.py
+mehmet@MEHMET-KARA:~/myproject/A/C$  explorer.exe .
+mehmet@MEHMET-KARA:~/myproject/A/C$ cp 2.py ../.. B/patpat.txt
+cp: target 'B/patpat.txt' is not a directory
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd
+mehmet@MEHMET-KARA:~$ cd A
+-bash: cd: A: No such file or directory
+mehmet@MEHMET-KARA:~$ cd myproject/A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ cp 1.txt C/patpat.txt
+mehmet@MEHMET-KARA:~/myproject/A$ cd C
+mehmet@MEHMET-KARA:~/myproject/A/C$ ls
+2.py  3.pdf  patpat.txt  python.py
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ cd A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ cp A/1.txt B/papatya.txt
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  G  papatya.txt
+mehmet@MEHMET-KARA:~/myproject/B$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ cp -r A/C B/E
+mehmet@MEHMET-KARA:~/myproject$ cd B/E
+mehmet@MEHMET-KARA:~/myproject/B/E$ ls
+5  6  7  C
+mehmet@MEHMET-KARA:~/myproject/B/E$ cp -r A/C B/E dosya kopyalanırken
+-r kulanılır  C Yİ E ye koplayadık
+cp: target 'koplayadık' is not a directory
+mehmet@MEHMET-KARA:~/myproject/B/E$

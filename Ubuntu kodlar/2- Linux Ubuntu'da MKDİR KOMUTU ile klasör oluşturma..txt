@@ -1,0 +1,61 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ explorer.exe .
+mehmet@MEHMET-KARA:~$ ls
+a
+mehmet@MEHMET-KARA:~$ mkdir dosyaolusturur
+mehmet@MEHMET-KARA:~$ ls
+a  dosyaolusturur  myfile1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ mkdir klasor1
+mehmet@MEHMET-KARA:~$ ls
+a  dosyaolusturur  klasor1  myfile1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ mkdir klas2 klas3
+mehmet@MEHMET-KARA:~$ ls
+a  dosyaolusturur  klas2  klas3  klasor1  myfile1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ ls -tl
+total 24
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:24 klas2
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:24 klas3
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:23 klasor1
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:22 dosyaolusturur
+-rw-r--r-- 1 mehmet mehmet    0 Feb 23 23:20 ubuntukodlar.txt
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:20 myfile1
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:05 a
+mehmet@MEHMET-KARA:~$ ls -a
+.              .bashrc      .sudo_as_admin_successful  klas3
+..             .cache       a                          klasor1
+.bash_history  .motd_shown  dosyaolusturur             myfile1
+.bash_logout   .profile     klas2                      ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ mkdir .gizliklasor1 gizliklasor2
+mehmet@MEHMET-KARA:~$ ls -a
+.              .gizliklasor1              gizliklasor2
+..             .motd_shown                klas2
+.bash_history  .profile                   klas3
+.bash_logout   .sudo_as_admin_successful  klasor1
+.bashrc        a                          myfile1
+.cache         dosyaolusturur             ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ mkdir -p A/B/C/D
+mehmet@MEHMET-KARA:~$ ls
+A  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+a  gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ cd A
+mehmet@MEHMET-KARA:~/A$ cd B
+mehmet@MEHMET-KARA:~/A/B$ cd C
+mehmet@MEHMET-KARA:~/A/B/C$ cd D
+mehmet@MEHMET-KARA:~/A/B/C/D$ ls
+mehmet@MEHMET-KARA:~/A/B/C/D$ cd
+mehmet@MEHMET-KARA:~$ ls
+A  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+a  gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ ls -l
+total 32
+drwxr-xr-x 3 mehmet mehmet 4096 Feb 23 23:28 A
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:05 a
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:22 dosyaolusturur
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:26 gizliklasor2
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:24 klas2
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:24 klas3
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:23 klasor1
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:20 myfile1
+-rw-r--r-- 1 mehmet mehmet    0 Feb 23 23:20 ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$

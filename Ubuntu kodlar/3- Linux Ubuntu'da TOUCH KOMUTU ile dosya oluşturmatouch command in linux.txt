@@ -1,0 +1,38 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+A  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+a  gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ mkdir dosya
+mehmet@MEHMET-KARA:~$ cd dosya
+mehmet@MEHMET-KARA:~/dosya$ ls
+mehmet@MEHMET-KARA:~/dosya$ touch text.txt
+mehmet@MEHMET-KARA:~/dosya$ ls
+text.txt
+mehmet@MEHMET-KARA:~/dosya$ touch python.py
+mehmet@MEHMET-KARA:~/dosya$ ls
+python.py  text.txt
+mehmet@MEHMET-KARA:~/dosya$ explorer.exe .
+mehmet@MEHMET-KARA:~/dosya$ pwd
+/home/mehmet/dosya
+mehmet@MEHMET-KARA:~/dosya$ ls -a
+.  ..  python.py  text.txt
+mehmet@MEHMET-KARA:~/dosya$ touch .abc.txt
+mehmet@MEHMET-KARA:~/dosya$ ls -a
+.  ..  .abc.txt  python.py  text.txt
+mehmet@MEHMET-KARA:~/dosya$ touch birinci.txt ikinci.py ucuncu.ipynb
+mehmet@MEHMET-KARA:~/dosya$ ls
+birinci.txt  ikinci.py  python.py  text.txt  ucuncu.ipynb
+mehmet@MEHMET-KARA:~/dosya$ explorer.exe .
+mehmet@MEHMET-KARA:~/dosya$ mkdir -p A/B
+mehmet@MEHMET-KARA:~/dosya$ ls
+A  birinci.txt  ikinci.py  python.py  text.txt  ucuncu.ipynb
+mehmet@MEHMET-KARA:~/dosya$ cd A/B
+mehmet@MEHMET-KARA:~/dosya/A/B$ touch abc.txt
+mehmet@MEHMET-KARA:~/dosya/A/B$ ls
+abc.txt
+mehmet@MEHMET-KARA:~/dosya/A/B$ cd ..
+mehmet@MEHMET-KARA:~/dosya/A$ cd ..
+mehmet@MEHMET-KARA:~/dosya$ cd ..
+mehmet@MEHMET-KARA:~$ explorer.exe .
+mehmet@MEHMET-KARA:~$

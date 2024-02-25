@@ -1,0 +1,500 @@
+mehmet@MEHMET-KARA:~$ ls
+abc        dosya           gizliklasor2  klasor1    snap
+alıstırma  dosyaolusturur  klas2         myfile1    ubuntukodlar.txt
+birinci    echo            klas3         myproject
+mehmet@MEHMET-KARA:~$ cd dosya
+mehmet@MEHMET-KARA:~/dosya$ ls
+A  birinci.txt  ikinci.py  python.py  text.txt  ucuncu.ipynb
+mehmet@MEHMET-KARA:~/dosya$ cd ..
+mehmet@MEHMET-KARA:~$ cd abc
+mehmet@MEHMET-KARA:~/abc$ ls
+mehmet@MEHMET-KARA:~/abc$ cd ../myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+B  adana
+mehmet@MEHMET-KARA:~/myproject$ cd adana/
+mehmet@MEHMET-KARA:~/myproject/adana$ ls
+1.txt  C  Ctest11.txt  D  kpy
+mehmet@MEHMET-KARA:~/myproject/adana$ cd
+mehmet@MEHMET-KARA:~$ cd echo
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  mylshelp  python.py  text.txt  yeni.txt
+mehmet@MEHMET-KARA:~/echo$ cd
+mehmet@MEHMET-KARA:~$ cd abc/
+mehmet@MEHMET-KARA:~/abc$ ls
+mehmet@MEHMET-KARA:~/abc$ cd
+mehmet@MEHMET-KARA:~$ mkdir karakter
+mehmet@MEHMET-KARA:~$ ls
+abc        dosya           gizliklasor2  klas3    myproject
+alıstırma  dosyaolusturur  karakter      klasor1  snap
+birinci    echo            klas2         myfile1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ cd karakter/
+mehmet@MEHMET-KARA:~/karakter$ ls
+mehmet@MEHMET-KARA:~/karakter$ touch da.py dg.py
+mehmet@MEHMET-KARA:~/karakter$ ls
+da.py  dg.py
+mehmet@MEHMET-KARA:~/karakter$ touch dm.py dh.py dk.pydf.py dl.py
+mehmet@MEHMET-KARA:~/karakter$ ls
+da.py  dg.py  dh.py  dk.pydf.py  dl.py  dm.py
+mehmet@MEHMET-KARA:~/karakter$ mkdir fb1der fb2der fb3der fb4der fb5der
+mehmet@MEHMET-KARA:~/karakter$ ls
+da.py  dh.py       dl.py  fb1der  fb3der  fb5der
+dg.py  dk.pydf.py  dm.py  fb2der  fb4der
+mehmet@MEHMET-KARA:~/karakter$ touch folder1.txt folder 2.txt folder3.txt
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  dg.py  dk.pydf.py  dm.py   fb2der  fb4der  folder       folder3.txt
+da.py  dh.py  dl.py       fb1der  fb3der  fb5der  folder1.txt
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ ls*
+Command 'ls*' not found, did you mean:
+  command 'lsd' from snap lsd (0.16.0)
+  command 'ls' from deb coreutils (8.32-4.1ubuntu1)
+  command 'lsc' from deb livescript (1.6.1+dfsg-2)
+  command 'lsh' from deb lsh-client (2.1-13)
+  command 'lsm' from deb lsm (1.0.4-2)
+  command 'lsw' from deb suckless-tools (46-1)
+See 'snap info <snapname>' for additional versions.
+mehmet@MEHMET-KARA:~/karakter$ ls *
+2.txt  dg.py  dk.pydf.py  dm.py   folder1.txt
+da.py  dh.py  dl.py       folder  folder3.txt
+
+fb1der:
+
+fb2der:
+
+fb3der:
+
+fb4der:
+
+fb5der:
+mehmet@MEHMET-KARA:~/karakter$ cd
+mehmet@MEHMET-KARA:~$ ls *
+ubuntukodlar.txt
+
+abc:
+
+alıstırma:
+A  B  beyaz_diş1.txt  roman
+
+birinci:
+ikinci
+
+dosya:
+A  birinci.txt  ikinci.py  python.py  text.txt  ucuncu.ipynb
+
+dosyaolusturur:
+
+echo:
+K.pdf  abcd  deneme.txt  mylshelp  python.py  text.txt  yeni.txt
+
+gizliklasor2:
+
+karakter:
+2.txt  dg.py  dk.pydf.py  dm.py   fb2der  fb4der  folder       folder3.txt
+da.py  dh.py  dl.py       fb1der  fb3der  fb5der  folder1.txt
+
+klas2:
+
+klas3:
+
+klasor1:
+
+myfile1:
+
+myproject:
+B  adana
+
+snap:
+tree
+mehmet@MEHMET-KARA:~$ #
+mehmet@MEHMET-KARA:~$ ls * dosyaların içindekileride görmemizi sağlar help i
+le de bu özelikler e bakılabilir
+ls: cannot access 'dosyaların': No such file or directory
+ls: cannot access 'içindekileride': No such file or directory
+ls: cannot access 'görmemizi': No such file or directory
+ls: cannot access 'sağlar': No such file or directory
+ls: cannot access 'help': No such file or directory
+ls: cannot access 'ile': No such file or directory
+ls: cannot access 'de': No such file or directory
+ls: cannot access 'bu': No such file or directory
+ls: cannot access 'özelikler': No such file or directory
+ls: cannot access 'e': No such file or directory
+ls: cannot access 'bakılabilir': No such file or directory
+ubuntukodlar.txt
+
+abc:
+
+alıstırma:
+A  B  beyaz_diş1.txt  roman
+
+birinci:
+ikinci
+
+dosya:
+A  birinci.txt  ikinci.py  python.py  text.txt  ucuncu.ipynb
+
+dosyaolusturur:
+
+echo:
+K.pdf  abcd  deneme.txt  mylshelp  python.py  text.txt  yeni.txt
+
+gizliklasor2:
+
+karakter:
+2.txt  dg.py  dk.pydf.py  dm.py   fb2der  fb4der  folder       folder3.txt
+da.py  dh.py  dl.py       fb1der  fb3der  fb5der  folder1.txt
+
+klas2:
+
+klas3:
+
+klasor1:
+
+myfile1:
+
+myproject:
+B  adana
+
+snap:
+tree
+mehmet@MEHMET-KARA:~$ #
+mehmet@MEHMET-KARA:~$ #ls * dosyaların içindekileride görmemizi sağlar help
+ile de bu özelikler e bakılabilir
+mehmet@MEHMET-KARA:~$ #
+mehmet@MEHMET-KARA:~$ cd karakter/
+mehmet@MEHMET-KARA:~/karakter$ mkdir a1 a2 a3 a4 a5 a6
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a3  a6     dh.py       dm.py   fb3der  folder
+a1     a4  da.py  dk.pydf.py  fb1der  fb4der  folder1.txt
+a2     a5  dg.py  dl.py       fb2der  fb5der  folder3.txt
+mehmet@MEHMET-KARA:~/karakter$ mkdir a11 a12 a13 a14 a15
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a12  a15  a4  da.py  dk.pydf.py  fb1der  fb4der  folder1.txt
+a1     a13  a2   a5  dg.py  dl.py       fb2der  fb5der  folder3.txt
+a11    a14  a3   a6  dh.py  dm.py       fb3der  folder
+mehmet@MEHMET-KARA:~/karakter$ rmdir a1*
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  da.py  dk.pydf.py  fb1der  fb4der  folder1.txt
+a2     a5  dg.py  dl.py       fb2der  fb5der  folder3.txt
+a3     a6  dh.py  dm.py       fb3der  folder
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ # a1 ile başlıyan herşeyi sildk
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ mkdir yat yaz yap yak yal yam yad
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  da.py  dk.pydf.py  fb1der  fb4der  folder1.txt  yak  yap
+a2     a5  dg.py  dl.py       fb2der  fb5der  folder3.txt  yal  yat
+a3     a6  dh.py  dm.py       fb3der  folder  yad          yam  yaz
+mehmet@MEHMET-KARA:~/karakter$ ls ya?
+yad:
+
+yak:
+
+yal:
+
+yam:
+
+yap:
+
+yat:
+
+yaz:
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ #ya ile başşlıyanları getir
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ ls y??
+yad:
+
+yak:
+
+yal:
+
+yam:
+
+yap:
+
+yat:
+
+yaz:
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ son iki karakterini  ilmiyorum am y ile başlı
+anları getir
+Command 'son' not found, did you mean:
+  command 'syn' from snap syn (0.1)
+  command 'sos' from snap sosreport (4.6.0-1)
+  command 'sow' from deb ruby-hoe (3.22.1+dfsg1-2)
+  command 'sox' from deb sox (14.4.2+git20190427-2+deb11u2ubuntu0.22.04.1)
+  command 'sol' from deb aisleriot (1:3.22.22-1)
+  command 'pon' from deb ppp (2.4.9-1+1ubuntu3)
+  command 'mon' from deb mon (1.3.6-2)
+  command 'sen' from deb sen (0.6.2-1)
+  command 'slon' from deb slony1-2-bin (2.2.10-3)
+  command 'svn' from deb subversion (1.14.1-3ubuntu0.22.04.1)
+  command 'sor' from deb pccts (1.33MR33-6.1)
+  command 'sos' from deb sosreport (4.5.6-0ubuntu1~22.04.2)
+  command 'sn' from deb mono-devel (6.8.0.105+dfsg-3.2)
+See 'snap info <snapname>' for additional versions.
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  da.py  dk.pydf.py  fb1der  fb4der  folder1.txt  yak  yap
+a2     a5  dg.py  dl.py       fb2der  fb5der  folder3.txt  yal  yat
+a3     a6  dh.py  dm.py       fb3der  folder  yad          yam  yaz
+mehmet@MEHMET-KARA:~/karakter$ ls f??der
+folder
+
+fb1der:
+
+fb2der:
+
+fb3der:
+
+fb4der:
+
+fb5der:
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  da.py  dk.pydf.py  fb1der  fb4der  folder1.txt  yak  yap
+a2     a5  dg.py  dl.py       fb2der  fb5der  folder3.txt  yal  yat
+a3     a6  dh.py  dm.py       fb3der  folder  yad          yam  yaz
+mehmet@MEHMET-KARA:~/karakter$ rmdir f??der
+rmdir: failed to remove 'folder': Not a directory
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  da.py  dk.pydf.py  folder       yad  yam  yaz
+a2     a5  dg.py  dl.py       folder1.txt  yak  yap
+a3     a6  dh.py  dm.py       folder3.txt  yal  yat
+mehmet@MEHMET-KARA:~/karakter$ touch t1 t2 y3 t4 t5 t6 t7
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  da.py  dk.pydf.py  folder       t1  t5  y3   yal  yat
+a2     a5  dg.py  dl.py       folder1.txt  t2  t6  yad  yam  yaz
+a3     a6  dh.py  dm.py       folder3.txt  t4  t7  yak  yap
+mehmet@MEHMET-KARA:~/karakter$ mkdir a b c d i f
+mehmet@MEHMET-KARA:~/karakter$ ls
+2.txt  a4  c      dh.py       f            i   t5  yad  yap
+a      a5  d      dk.pydf.py  folder       t1  t6  yak  yat
+a2     a6  da.py  dl.py       folder1.txt  t2  t7  yal  yaz
+a3     b   dg.py  dm.py       folder3.txt  t4  y3  yam
+mehmet@MEHMET-KARA:~/karakter$ ls t[1-4]
+t1  t2  t4
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ # t ile başlıyan 1 -4 kadar olanaları listele
+sin
+mehmet@MEHMET-KARA:~/karakter$ #
+mehmet@MEHMET-KARA:~/karakter$ ls [a-e]
+a:
+
+b:
+
+c:
+
+d:
+mehmet@MEHMET-KARA:~/karakter$ ls t[1,3]
+t1
+mehmet@MEHMET-KARA:~/karakter$ ls t[1,4]
+t1  t4
+mehmet@MEHMET-KARA:~/karakter$ ls a b
+a:
+
+b:
+mehmet@MEHMET-KARA:~/karakter$ ls t1 t2
+t1  t2
+mehmet@MEHMET-KARA:~/karakter$
+mehmet@MEHMET-KARA:~/karakter$ rm *
+rm: cannot remove 'a': Is a directory
+rm: cannot remove 'a2': Is a directory
+rm: cannot remove 'a3': Is a directory
+rm: cannot remove 'a4': Is a directory
+rm: cannot remove 'a5': Is a directory
+rm: cannot remove 'a6': Is a directory
+rm: cannot remove 'b': Is a directory
+rm: cannot remove 'c': Is a directory
+rm: cannot remove 'd': Is a directory
+rm: cannot remove 'f': Is a directory
+rm: cannot remove 'i': Is a directory
+rm: cannot remove 'yad': Is a directory
+rm: cannot remove 'yak': Is a directory
+rm: cannot remove 'yal': Is a directory
+rm: cannot remove 'yam': Is a directory
+rm: cannot remove 'yap': Is a directory
+rm: cannot remove 'yat': Is a directory
+rm: cannot remove 'yaz': Is a directory
+mehmet@MEHMET-KARA:~/karakter$ ls
+a  a2  a3  a4  a5  a6  b  c  d  f  i  yad  yak  yal  yam  yap  yat  yaz
+mehmet@MEHMET-KARA:~/karakter$ rmdir *
+mehmet@MEHMET-KARA:~/karakter$ ls
+mehmet@MEHMET-KARA:~/karakter$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+mehmet@MEHMET-KARA:~/karakter$ mkdir t{0..10}z
+mehmet@MEHMET-KARA:~/karakter$ ls
+t0z  t10z  t1z  t2z  t3z  t4z  t5z  t6z  t7z  t8z  t9z
+mehmet@MEHMET-KARA:~/karakter$
+mehmet@MEHMET-KARA:~/karakter$ # mkdir t{0..10}z kısa yoldan klasörler oluşturduk
+mehmet@MEHMET-KARA:~/karakter$
+mehmet@MEHMET-KARA:~/karakter$ touch vatan{1..5}
+mehmet@MEHMET-KARA:~/karakter$ ls
+t0z   t1z  t3z  t5z  t7z  t9z     vatan2  vatan4
+t10z  t2z  t4z  t6z  t8z  vatan1  vatan3  vatan5
+mehmet@MEHMET-KARA:~/karakter$ mkdir t{a.f}{1.6}
+mehmet@MEHMET-KARA:~/karakter$ ls
+t0z   t1z  t3z  t5z  t7z  t9z          vatan1  vatan3  vatan5
+t10z  t2z  t4z  t6z  t8z  t{a.f}{1.6}  vatan2  vatan4
+mehmet@MEHMET-KARA:~/karakter$ mkdir t{a..f}{1..6}
+mehmet@MEHMET-KARA:~/karakter$ ls
+t0z   t4z  t9z  ta5  tb4  tc3  td2  te1  te6  tf5          vatan3
+t10z  t5z  ta1  ta6  tb5  tc4  td3  te2  tf1  tf6          vatan4
+t1z   t6z  ta2  tb1  tb6  tc5  td4  te3  tf2  t{a.f}{1.6}  vatan5
+t2z   t7z  ta3  tb2  tc1  tc6  td5  te4  tf3  vatan1
+t3z   t8z  ta4  tb3  tc2  td1  td6  te5  tf4  vatan2
+mehmet@MEHMET-KARA:~/karakter$ rmdir t{0..10}
+rmdir: failed to remove 't0': No such file or directory
+rmdir: failed to remove 't1': No such file or directory
+rmdir: failed to remove 't2': No such file or directory
+rmdir: failed to remove 't3': No such file or directory
+rmdir: failed to remove 't4': No such file or directory
+rmdir: failed to remove 't5': No such file or directory
+rmdir: failed to remove 't6': No such file or directory
+rmdir: failed to remove 't7': No such file or directory
+rmdir: failed to remove 't8': No such file or directory
+rmdir: failed to remove 't9': No such file or directory
+rmdir: failed to remove 't10': No such file or directory
+mehmet@MEHMET-KARA:~/karakter$ ls
+t0z   t4z  t9z  ta5  tb4  tc3  td2  te1  te6  tf5          vatan3
+t10z  t5z  ta1  ta6  tb5  tc4  td3  te2  tf1  tf6          vatan4
+t1z   t6z  ta2  tb1  tb6  tc5  td4  te3  tf2  t{a.f}{1.6}  vatan5
+t2z   t7z  ta3  tb2  tc1  tc6  td5  te4  tf3  vatan1
+t3z   t8z  ta4  tb3  tc2  td1  td6  te5  tf4  vatan2
+mehmet@MEHMET-KARA:~/karakter$
+mehmet@MEHMET-KARA:~/karakter$ rmdir t{0..10}?
+mehmet@MEHMET-KARA:~/karakter$ ls
+ta1  ta5  tb3  tc1  tc5  td3  te1  te5  tf3  t{a.f}{1.6}  vatan4
+ta2  ta6  tb4  tc2  tc6  td4  te2  te6  tf4  vatan1       vatan5
+ta3  tb1  tb5  tc3  td1  td5  te3  tf1  tf5  vatan2
+ta4  tb2  tb6  tc4  td2  td6  te4  tf2  tf6  vatan3
+mehmet@MEHMET-KARA:~/karakter$ rmdir t*
+mehmet@MEHMET-KARA:~/karakter$ ls
+vatan1  vatan2  vatan3  vatan4  vatan5
+mehmet@MEHMET-KARA:~/karakter$ mkdir {a..d}
+mehmet@MEHMET-KARA:~/karakter$ ls
+a  b  c  d  vatan1  vatan2  vatan3  vatan4  vatan5
+mehmet@MEHMET-KARA:~/karakter$ mkdir [e-h]
+mehmet@MEHMET-KARA:~/karakter$ ls
+'[e-h]'   a   b   c   d   vatan1   vatan2   vatan3   vatan4   vatan5
+mehmet@MEHMET-KARA:~/karakter$
+mehmet@MEHMET-KARA:~/karakter$ cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don't copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+Use --reflink=never to ensure a standard copy is performed.
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/cp>
+or available locally via: info '(coreutils) cp invocation'
+mehmet@MEHMET-KARA:~/karakter$ cp --help | head 15
+head: cannot open '15' for reading: No such file or directory
+mehmet@MEHMET-KARA:~/karakter$ cp --help | head 15
+head: cannot open '15' for reading: No such file or directory
+mehmet@MEHMET-KARA:~/karakter$ ls | sort
+[e-h]
+a
+b
+c
+d
+vatan1
+vatan2
+vatan3
+vatan4
+vatan5
+mehmet@MEHMET-KARA:~/karakter$ ls | sort -R
+vatan5
+vatan3
+b
+c
+[e-h]
+vatan4
+vatan2
+a
+vatan1
+d
+mehmet@MEHMET-KARA:~/karakter$ # pipe | işareti önce solındaki sonra sağındaki işlemleri tek seferde yapmamıza yarar
+mehmet@MEHMET-KARA:~/karakter$
+mehmet@MEHMET-KARA:~/karakter$ sudo su
+[sudo] password for mehmet:
+root@MEHMET-KARA:/home/mehmet/karakter# ls
+'[e-h]'   a   b   c   d   vatan1   vatan2   vatan3   vatan4   vatan5
+root@MEHMET-KARA:/home/mehmet/karakter#
+root@MEHMET-KARA:/home/mehmet/karakter# # artık root ayım herşeye erişim hak
+ım var
+root@MEHMET-KARA:/home/mehmet/karakter# exit
+exit
+mehmet@MEHMET-KARA:~/karakter$

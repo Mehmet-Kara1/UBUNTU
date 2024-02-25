@@ -1,0 +1,91 @@
+mehmet@MEHMET-KARA:~/myproject/B$ pwd
+/home/mehmet/myproject/B
+mehmet@MEHMET-KARA:~/myproject/B$ cd
+mehmet@MEHMET-KARA:~$ mkdir echo
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas2    myfile1    ubuntukodlar.txt
+birinci  echo            klas3    myproject
+dosya    gizliklasor2    klasor1  snap
+mehmet@MEHMET-KARA:~$ cd echo
+mehmet@MEHMET-KARA:~/echo$ ls
+mehmet@MEHMET-KARA:~/echo$ touch text.txt python.py K.pdf
+mehmet@MEHMET-KARA:~/echo$ echo "bu bir python dosyasıdır" >python.py
+mehmet@MEHMET-KARA:~/echo$ cat python.py
+bu bir python dosyasıdır
+mehmet@MEHMET-KARA:~/echo$ #cat ile okuma yaptık
+mehmet@MEHMET-KARA:~/echo$ # echo ile yazma yapıyoruz
+mehmet@MEHMET-KARA:~/echo$ echo "hello world" > python.py
+mehmet@MEHMET-KARA:~/echo$ cat python.py
+hello world
+mehmet@MEHMET-KARA:~/echo$ #tek > ile öncekini silip üzerine yazar
+mehmet@MEHMET-KARA:~/echo$ echo " merhaba dünya " >> python.py
+mehmet@MEHMET-KARA:~/echo$ cat python.py
+hello world
+ merhaba dünya
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  python.py  text.txt
+mehmet@MEHMET-KARA:~/echo$ echo "denme yazısı" > deneme.txt
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  deneme.txt  python.py  text.txt
+mehmet@MEHMET-KARA:~/echo$ cat deneme.txt
+denme yazısı
+mehmet@MEHMET-KARA:~/echo$ cat > deneme.txt
+cat > ile bu dosyanın içine girdim ve şuan içine yazı yazıyorum içinden çıkmak içim aşağdaki komutu kulanırız
+ctrl+d
+kısa yolu ile çıkarız
+mehmet@MEHMET-KARA:~/echo$ cat deneme.txt
+cat > ile bu dosyanın içine girdim ve şuan içine yazı yazıyorum içinden çıkmak içim aşağdaki komutu kulanırız
+ctrl+d
+kısa yolu ile çıkarız
+mehmet@MEHMET-KARA:~/echo$ cat>> deneme.txt
+123234
+23
+23
+mehmet@MEHMET-KARA:~/echo$ cat deneme.txt
+cat > ile bu dosyanın içine girdim ve şuan içine yazı yazıyorum içinden çıkmak içim aşağdaki komutu kulanırız
+ctrl+d
+kısa yolu ile çıkarız
+123234
+23
+23
+mehmet@MEHMET-KARA:~/echo$ #ctrl+d ile çılır
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  deneme.txt  python.py  text.txt
+mehmet@MEHMET-KARA:~/echo$ cat abcd
+cat: abcd: No such file or directory
+mehmet@MEHMET-KARA:~/echo$ cat > abcd
+merhaba dünyaaa
+selam arkadaşlarmehmet@MEHMET-KARA:~/echo$
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  python.py  text.txt
+mehmet@MEHMET-KARA:~/echo$ #olmayan dosyayı oluşturduk
+mehmet@MEHMET-KARA:~/echo$ cat abcd
+merhaba dünyaaa
+selam arkadaşlarmehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  python.py  text.txt
+mehmet@MEHMET-KARA:~/echo$ cat > abcd
+merhaba
+mehmet@MEHMET-KARA:~/echo$ cat deneme.txt
+cat > ile bu dosyanın içine girdim ve şuan içine yazı yazıyorum içinden çıkmak içim aşağdaki komutu kulanırız
+ctrl+d
+kısa yolu ile çıkarız
+123234
+23
+23
+mehmet@MEHMET-KARA:~/echo$ cat > deneme.txt
+dünya
+mehmet@MEHMET-KARA:~/echo$ cat abcd deneme.txt > yeni.txt
+mehmet@MEHMET-KARA:~/echo$ ls
+K.pdf  abcd  deneme.txt  python.py  text.txt  yeni.txt
+mehmet@MEHMET-KARA:~/echo$ cat yeni.txt
+merhaba
+dünya
+mehmet@MEHMET-KARA:~/echo$ #iki dosya içindeki yazıyı yeni bir dosya
+nın içine aktardık
+mehmet@MEHMET-KARA:~/echo$ cat >> text.txt
+deneme yazısı
+mehmet@MEHMET-KARA:~/echo$ cat abcd deneme.txt > text.txt
+mehmet@MEHMET-KARA:~/echo$ cat text.txt
+merhaba
+dünya
+mehmet@MEHMET-KARA:~/echo$

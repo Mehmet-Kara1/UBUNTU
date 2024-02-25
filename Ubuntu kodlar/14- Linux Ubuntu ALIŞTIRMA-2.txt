@@ -1,0 +1,160 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas2    myfile1    ubuntukodlar.txt
+birinci  echo            klas3    myproject
+dosya    gizliklasor2    klasor1  snap
+mehmet@MEHMET-KARA:~$ mkdir alıstırma
+mehmet@MEHMET-KARA:~$ cd alıstırma/
+mehmet@MEHMET-KARA:~/alıstırma$ touch beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma$ mkdir roman
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+beyaz_diş.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ cp beyaz_diş.txt
+cp: missing destination file operand after 'beyaz_diş.txt'
+Try 'cp --help' for more information.
+mehmet@MEHMET-KARA:~/alıstırma$ cp beyaz_diş.txt beyaz_diş1.txt
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+beyaz_diş.txt  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ cp beyaz_diş.txt roman/
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+beyaz_diş.txt  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ cd roman/
+mehmet@MEHMET-KARA:~/alıstırma/roman$ ls
+beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/roman$ cd
+mehmet@MEHMET-KARA:~$ cd alıstırma/roman/
+mehmet@MEHMET-KARA:~/alıstırma/roman$ ls
+beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/roman$ cd ..
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+beyaz_diş.txt  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ mkdir A B
+mehmet@MEHMET-KARA:~/alıstırma$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+A  B  beyaz_diş.txt  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ cp beyaz_diş.txt A
+mehmet@MEHMET-KARA:~/alıstırma$ cd A
+mehmet@MEHMET-KARA:~/alıstırma/A$ ls
+beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/A$ cd ..
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+A  B  beyaz_diş.txt  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ mv beyaz_diş.txt B/bey_dil.py
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+A  B  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ cd B
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+bey_dil.py
+mehmet@MEHMET-KARA:~/alıstırma/B$ cd ..
+mehmet@MEHMET-KARA:~/alıstırma$ cd B
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+bey_dil.py
+mehmet@MEHMET-KARA:~/alıstırma/B$ mv bey_dil.py beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/B$ echo " beyaz diş jack Londannın en sevilen romanıdır" > beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/B$ cat beyaz_diş.txt
+ beyaz diş jack Londannın en sevilen romanıdır
+mehmet@MEHMET-KARA:~/alıstırma/B$ cd ..
+mehmet@MEHMET-KARA:~/alıstırma$ ls
+A  B  beyaz_diş1.txt  roman
+mehmet@MEHMET-KARA:~/alıstırma$ cd B
+mehmet@MEHMET-KARA:~/alıstırma/B$ cd ../B
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/B$ rm beyaz_diş.txt
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+mehmet@MEHMET-KARA:~/alıstırma/B$ cat > sınav_notları
+ahmet yılmaz 19 85 girdi
+selim yıldırım 23 65 girdi
+leyla atmaca 22 35 girdi
+yusuf karaca 21 66 girdi
+mehmet saim 20   girmedi
+hakan kara 23 62 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+sınav_notları
+mehmet@MEHMET-KARA:~/alıstırma/B$ cat sınav_notları
+ahmet yılmaz 19 85 girdi
+selim yıldırım 23 65 girdi
+leyla atmaca 22 35 girdi
+yusuf karaca 21 66 girdi
+mehmet saim 20   girmedi
+hakan kara 23 62 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort sınav_notları
+ahmet yılmaz 19 85 girdi
+hakan kara 23 62 girdi
+leyla atmaca 22 35 girdi
+mehmet saim 20   girmedi
+selim yıldırım 23 65 girdi
+yusuf karaca 21 66 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort -k2 sınav_notları
+leyla atmaca 22 35 girdi
+hakan kara 23 62 girdi
+yusuf karaca 21 66 girdi
+mehmet saim 20   girmedi
+selim yıldırım 23 65 girdi
+ahmet yılmaz 19 85 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort -k3 sınav_notları
+ahmet yılmaz 19 85 girdi
+mehmet saim 20   girmedi
+yusuf karaca 21 66 girdi
+leyla atmaca 22 35 girdi
+hakan kara 23 62 girdi
+selim yıldırım 23 65 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort -k4 sınav_notları
+mehmet saim 20   girmedi
+leyla atmaca 22 35 girdi
+hakan kara 23 62 girdi
+selim yıldırım 23 65 girdi
+yusuf karaca 21 66 girdi
+ahmet yılmaz 19 85 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort -k4n sınav_notları
+mehmet saim 20   girmedi
+leyla atmaca 22 35 girdi
+hakan kara 23 62 girdi
+selim yıldırım 23 65 girdi
+yusuf karaca 21 66 girdi
+ahmet yılmaz 19 85 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort -k4r sınav_notları
+ahmet yılmaz 19 85 girdi
+yusuf karaca 21 66 girdi
+selim yıldırım 23 65 girdi
+hakan kara 23 62 girdi
+leyla atmaca 22 35 girdi
+mehmet saim 20   girmedi
+mehmet@MEHMET-KARA:~/alıstırma/B$ sort -k4r sınav_notları > sıralı_not
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+sınav_notları  sıralı_not
+mehmet@MEHMET-KARA:~/alıstırma/B$ cat sıralı_not
+ahmet yılmaz 19 85 girdi
+yusuf karaca 21 66 girdi
+selim yıldırım 23 65 girdi
+hakan kara 23 62 girdi
+leyla atmaca 22 35 girdi
+mehmet saim 20   girmedi
+mehmet@MEHMET-KARA:~/alıstırma/B$ head -3 sıralı_not
+ahmet yılmaz 19 85 girdi
+yusuf karaca 21 66 girdi
+selim yıldırım 23 65 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ tail -3 sıralı_not
+hakan kara 23 62 girdi
+leyla atmaca 22 35 girdi
+mehmet saim 20   girmedi
+mehmet@MEHMET-KARA:~/alıstırma/B$ ls
+sınav_notları  sıralı_not
+mehmet@MEHMET-KARA:~/alıstırma/B$ cat sınav_notları
+ahmet yılmaz 19 85 girdi
+selim yıldırım 23 65 girdi
+leyla atmaca 22 35 girdi
+yusuf karaca 21 66 girdi
+mehmet saim 20   girmedi
+hakan kara 23 62 girdi
+mehmet@MEHMET-KARA:~/alıstırma/B$ grep "girmedi" sınav_notları
+mehmet saim 20   girmedi
+mehmet@MEHMET-KARA:~/alıstırma/B$ grep -v "girdi" sınav_notları
+mehmet saim 20   girmedi
+mehmet@MEHMET-KARA:~/alıstırma/B$

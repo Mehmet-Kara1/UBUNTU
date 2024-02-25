@@ -1,0 +1,101 @@
+mehmet@MEHMET-KARA:~$ sudo su
+root@MEHMET-KARA:/home/mehmet# ls
+abc        dosya           gizliklasor2  klas3    myproject
+alıstırma  dosyaolusturur  karakter      klasor1  snap
+birinci    echo            klas2         myfile1  ubuntukodlar.txt
+root@MEHMET-KARA:/home/mehmet# cd
+root@MEHMET-KARA:~#
+root@MEHMET-KARA:~# # ~ demek home alanındayım demek
+root@MEHMET-KARA:~#
+root@MEHMET-KARA:~# cd /
+root@MEHMET-KARA:/#
+root@MEHMET-KARA:/# cd / ile root alanına girdik
+bash: cd: too many arguments
+root@MEHMET-KARA:/#
+root@MEHMET-KARA:/# ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+root@MEHMET-KARA:/# cd home
+root@MEHMET-KARA:/home# ls
+mehmet
+root@MEHMET-KARA:/home# cd mehmet/
+root@MEHMET-KARA:/home/mehmet# ls
+abc        dosya           gizliklasor2  klas3    myproject
+alıstırma  dosyaolusturur  karakter      klasor1  snap
+birinci    echo            klas2         myfile1  ubuntukodlar.txt
+root@MEHMET-KARA:/home/mehmet# cd ..
+root@MEHMET-KARA:/home# cd ..
+root@MEHMET-KARA:/# ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+root@MEHMET-KARA:/# cd etc
+root@MEHMET-KARA:/etc# ls
+PackageKit                     iproute2             rc0.d
+X11                            issue                rc1.d
+adduser.conf                   issue.net            rc2.d
+alternatives                   kernel               rc3.d
+apparmor                       ld.so.cache          rc4.d
+apparmor.d                     ld.so.conf           rc5.d
+apport                         ld.so.conf.d         rc6.d
+apt                            ldap                 rcS.d
+bash.bashrc                    legal                resolv.conf
+bash_completion                libaudit.conf        rmt
+bash_completion.d              libnl-3              rpc
+bindresvport.blacklist         locale.alias         rsyslog.conf
+binfmt.d                       locale.gen           rsyslog.d
+byobu                          localtime            screenrc
+ca-certificates                logcheck             security
+ca-certificates.conf           login.defs           selinux
+ca-certificates.conf.dpkg-old  logrotate.conf       services
+console-setup                  logrotate.d          shadow
+cron.d                         lsb-release          shadow-
+cron.daily                     machine-id           shells
+cron.hourly                    magic                skel
+cron.monthly                   magic.mime           ssh
+cron.weekly                    manpath.config       ssl
+crontab                        mime.types           subgid
+dbus-1                         mke2fs.conf          subgid-
+debconf.conf                   modprobe.d           subuid
+debian_version                 modules              subuid-
+default                        modules-load.d       sudo.conf
+deluser.conf                   mtab                 sudo_logsrvd.conf
+depmod.d                       nanorc               sudoers
+dhcp                           netconfig            sudoers.d
+dpkg                           netplan              sysctl.conf
+e2scrub.conf                   networkd-dispatcher  sysctl.d
+environment                    networks             systemd
+ethertypes                     newt                 terminfo
+fonts                          nftables.conf        timezone
+fstab                          nsswitch.conf        tmpfiles.d
+fuse.conf                      opt                  ubuntu-advantage
+gai.conf                       os-release           ucf.conf
+groff                          pam.conf             udev
+group                          pam.d                ufw
+group-                         passwd               update-manager
+gshadow                        passwd-              update-motd.d
+gshadow-                       perl                 vim
+gss                            pm                   vtrgb
+hdparm.conf                    polkit-1             wgetrc
+host.conf                      profile              wsl.conf
+hostname                       profile.d            xattr.conf
+hosts                          protocols            xdg
+init.d                         python3              zsh_command_not_found
+inputrc                        python3.10
+root@MEHMET-KARA:/etc# cd ..
+root@MEHMET-KARA:/# cd opt
+root@MEHMET-KARA:/opt# ls
+root@MEHMET-KARA:/opt# cd ..
+root@MEHMET-KARA:/# cd madia
+bash: cd: madia: No such file or directory
+root@MEHMET-KARA:/# ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+root@MEHMET-KARA:/# cd media
+root@MEHMET-KARA:/media# ls
+root@MEHMET-KARA:/media# cd ..
+root@MEHMET-KARA:/# cd mnt
+root@MEHMET-KARA:/mnt# ls
+c  wsl  wslg
+root@MEHMET-KARA:/mnt# exit
+exit
+mehmet@MEHMET-KARA:~$

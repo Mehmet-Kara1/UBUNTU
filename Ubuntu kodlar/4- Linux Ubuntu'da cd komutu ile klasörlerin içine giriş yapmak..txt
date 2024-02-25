@@ -1,0 +1,51 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+A  dosya           gizliklasor2  klas3    myfile1
+a  dosyaolusturur  klas2         klasor1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ mkdir -p birinci/ikinci/ucuncu
+mehmet@MEHMET-KARA:~$ ls
+A  birinci  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+a  dosya    gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ cd A
+mehmet@MEHMET-KARA:~/A$ pwd
+/home/mehmet/A
+mehmet@MEHMET-KARA:~/A$ ls
+B
+mehmet@MEHMET-KARA:~/A$ cd B
+mehmet@MEHMET-KARA:~/A/B$ cd
+mehmet@MEHMET-KARA:~$ cd birinci
+mehmet@MEHMET-KARA:~/birinci$ ls
+ikinci
+mehmet@MEHMET-KARA:~/birinci$ cd ikinci
+mehmet@MEHMET-KARA:~/birinci/ikinci$ ls
+ucuncu
+mehmet@MEHMET-KARA:~/birinci/ikinci$ cd ucuncu
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ ls
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd
+mehmet@MEHMET-KARA:~$ cd birinci/ikinci/ucuncu/
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd .
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ pwd
+/home/mehmet/birinci/ikinci/ucuncu
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd ..
+mehmet@MEHMET-KARA:~/birinci/ikinci$ pwd
+/home/mehmet/birinci/ikinci
+mehmet@MEHMET-KARA:~/birinci/ikinci$ cd ..
+mehmet@MEHMET-KARA:~/birinci$ cd ..
+mehmet@MEHMET-KARA:~$ cd
+mehmet@MEHMET-KARA:~$ cd birinci/ikinci/ucuncu/
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd ../..
+mehmet@MEHMET-KARA:~/birinci$ cd ikinci/ucuncu/
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd ..
+mehmet@MEHMET-KARA:~/birinci/ikinci$ mkdir alpha
+mehmet@MEHMET-KARA:~/birinci/ikinci$ cd ucuncu/
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ explorer.exe .
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd ..
+mehmet@MEHMET-KARA:~/birinci/ikinci$ u
+Display all 145 possibilities? (y or n)
+mehmet@MEHMET-KARA:~/birinci/ikinci$ cd ucuncu/
+mehmet@MEHMET-KARA:~/birinci/ikinci/ucuncu$ cd ../alpha/
+mehmet@MEHMET-KARA:~/birinci/ikinci/alpha$ cd
+mehmet@MEHMET-KARA:~$

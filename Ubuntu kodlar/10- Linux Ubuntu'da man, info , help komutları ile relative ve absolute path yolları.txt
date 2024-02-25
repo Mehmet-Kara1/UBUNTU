@@ -1,0 +1,238 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas2    myfile1    ubuntukodlar.txt
+birinci  echo            klas3    myproject
+dosya    gizliklasor2    klasor1  snap
+mehmet@MEHMET-KARA:~$ ls -a
+.              .sudo_as_admin_successful  klas3
+..             abc                        klasor1
+.bash_history  birinci                    myfile1
+.bash_logout   dosya                      myproject
+.bashrc        dosyaolusturur             snap
+.cache         echo                       ubuntukodlar.txt
+.motd_shown    gizliklasor2
+.profile       klas2
+mehmet@MEHMET-KARA:~$ ls -l
+total 48
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 24 10:04 abc
+drwxr-xr-x 3 mehmet mehmet 4096 Feb 24 00:01 birinci
+drwxr-xr-x 3 mehmet mehmet 4096 Feb 23 23:49 dosya
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:22 dosyaolusturur
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 24 17:05 echo
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:26 gizliklasor2
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:24 klas2
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:24 klas3
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:23 klasor1
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:20 myfile1
+drwxr-xr-x 4 mehmet mehmet 4096 Feb 24 16:14 myproject
+drwx------ 3 mehmet mehmet 4096 Feb 24 11:48 snap
+-rw-r--r-- 1 mehmet mehmet    0 Feb 23 23:20 ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+mehmet@MEHMET-KARA:~$ ls -i
+ 1210 abc             27004 gizliklasor2  26994 myproject
+27020 birinci         27001 klas2         27094 snap
+27010 dosya           27002 klas3         26998 ubuntukodlar.txt
+26999 dosyaolusturur  27000 klasor1
+31501 echo            26997 myfile1
+mehmet@MEHMET-KARA:~$ ls -n
+total 48
+drwxr-xr-x 2 1000 1000 4096 Feb 24 10:04 abc
+drwxr-xr-x 3 1000 1000 4096 Feb 24 00:01 birinci
+drwxr-xr-x 3 1000 1000 4096 Feb 23 23:49 dosya
+drwxr-xr-x 2 1000 1000 4096 Feb 23 23:22 dosyaolusturur
+drwxr-xr-x 2 1000 1000 4096 Feb 24 17:05 echo
+drwxr-xr-x 2 1000 1000 4096 Feb 23 23:26 gizliklasor2
+drwxr-xr-x 2 1000 1000 4096 Feb 23 23:24 klas2
+drwxr-xr-x 2 1000 1000 4096 Feb 23 23:24 klas3
+drwxr-xr-x 2 1000 1000 4096 Feb 23 23:23 klasor1
+drwxr-xr-x 2 1000 1000 4096 Feb 23 23:20 myfile1
+drwxr-xr-x 4 1000 1000 4096 Feb 24 16:14 myproject
+drwx------ 3 1000 1000 4096 Feb 24 11:48 snap
+-rw-r--r-- 1 1000 1000    0 Feb 23 23:20 ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ man ls
+mehmet@MEHMET-KARA:~$ man mkdir
+mehmet@MEHMET-KARA:~$ info ls
+mehmet@MEHMET-KARA:~$ info mkdir
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas2    myfile1    ubuntukodlar.txt
+birinci  echo            klas3    myproject
+dosya    gizliklasor2    klasor1  snap
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+B  adana
+mehmet@MEHMET-KARA:~/myproject$ cd adana/
+mehmet@MEHMET-KARA:~/myproject/adana$ ls
+1.txt  C  Ctest11.txt  D  kpy
+mehmet@MEHMET-KARA:~/myproject/adana$ cd C
+mehmet@MEHMET-KARA:~/myproject/adana/C$ ls
+2.py  3.pdf  patpat.txt  python.py
+mehmet@MEHMET-KARA:~/myproject/adana/C$ cd ../../B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  çiçek.txt
+mehmet@MEHMET-KARA:~/myproject/B$ cd E
+mehmet@MEHMET-KARA:~/myproject/B/E$ ls
+5  6  7  C
+mehmet@MEHMET-KARA:~/myproject/B/E$ cd C
+mehmet@MEHMET-KARA:~/myproject/B/E/C$ cd ../../../adana/denizli
+-bash: cd: ../../../adana/denizli: No such file or directory
+mehmet@MEHMET-KARA:~/myproject/B/E/C$ cd ../../../
+mehmet@MEHMET-KARA:~/myproject$ ls
+B  adana
+mehmet@MEHMET-KARA:~/myproject$ cd adana/
+mehmet@MEHMET-KARA:~/myproject/adana$ ls
+1.txt  C  Ctest11.txt  D  kpy
+mehmet@MEHMET-KARA:~/myproject/adana$ cd ../../B
+-bash: cd: ../../B: No such file or directory
+mehmet@MEHMET-KARA:~/myproject/adana$ cd E
+-bash: cd: E: No such file or directory
+mehmet@MEHMET-KARA:~/myproject/adana$ cd C
+mehmet@MEHMET-KARA:~/myproject/adana/C$ ls
+2.py  3.pdf  patpat.txt  python.py
+mehmet@MEHMET-KARA:~/myproject/adana/C$ cd ../../../adana/kpy
+-bash: cd: ../../../adana/kpy: No such file or directory
+mehmet@MEHMET-KARA:~/myproject/adana/C$ cd
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+B  adana
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  çiçek.txt
+mehmet@MEHMET-KARA:~/myproject/B$ cd E
+mehmet@MEHMET-KARA:~/myproject/B/E$ ls
+5  6  7  C
+mehmet@MEHMET-KARA:~/myproject/B/E$ ../../adana/kpy/
+-bash: ../../adana/kpy/: Is a directory
+mehmet@MEHMET-KARA:~/myproject/B/E$ ls
+5  6  7  C
+mehmet@MEHMET-KARA:~/myproject/B/E$ ../../
+-bash: ../../: Is a directory
+mehmet@MEHMET-KARA:~/myproject/B/E$ cd ../../adana/kpy/
+mehmet@MEHMET-KARA:~/myproject/adana/kpy$ ls
+9.pdf
+mehmet@MEHMET-KARA:~/myproject/adana/kpy$ cd ~/abc/
+mehmet@MEHMET-KARA:~/abc$ # ~ ile direk home a gider
+mehmet@MEHMET-KARA:~/abc$ #
+mehmet@MEHMET-KARA:~/abc$ cd
+mehmet@MEHMET-KARA:~$

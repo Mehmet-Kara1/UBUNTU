@@ -1,0 +1,63 @@
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.133.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+This message is shown once a day. To disable it please create the
+/home/mehmet/.hushlogin file.
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ whoami
+mehmet
+mehmet@MEHMET-KARA:~$ hostname
+MEHMET-KARA
+mehmet@MEHMET-KARA:~$ explorer.exe
+mehmet@MEHMET-KARA:~$ cd a
+-bash: cd: a: No such file or directory
+mehmet@MEHMET-KARA:~$ cd a
+mehmet@MEHMET-KARA:~/a$ pdw
+Command 'pdw' not found, did you mean:
+  command 'ptw' from snap ptw (1.0.0)
+  command 'pda' from deb speech-tools (1:2.5.0-12)
+  command 'pd' from deb puredata-core (0.52.1+ds0-1)
+  command 'psw' from deb wise (2.4.1-23)
+  command 'pdl' from deb pdl (1:2.074-1)
+  command 'cdw' from deb cdw (0.8.1-2)
+  command 'pfw' from deb pftools (3.2.11-2)
+  command 'pmw' from deb pmw (1:4.50-1)
+  command 'pdd' from deb pdd (1.5-1)
+  command 'pdb' from deb python-dev-is-python3 (3.9.2-2)
+  command 'pwd' from deb coreutils (8.32-4.1ubuntu1)
+See 'snap info <snapname>' for additional versions.
+mehmet@MEHMET-KARA:~/a$ pwd
+/home/mehmet/a
+mehmet@MEHMET-KARA:~/a$ cd
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+a
+mehmet@MEHMET-KARA:~$ ls-l
+ls-l: command not found
+mehmet@MEHMET-KARA:~$ ls -a
+.   .bash_history  .bashrc  .motd_shown  .sudo_as_admin_successful
+..  .bash_logout   .cache   .profile     a
+mehmet@MEHMET-KARA:~$ ls -la
+total 32
+drwxr-x--- 4 mehmet mehmet 4096 Feb 23 23:05 .
+drwxr-xr-x 3 root   root   4096 Nov  9 11:40 ..
+-rw------- 1 mehmet mehmet  451 Nov  9 11:52 .bash_history
+-rw-r--r-- 1 mehmet mehmet  220 Nov  9 11:40 .bash_logout
+-rw-r--r-- 1 mehmet mehmet 3771 Nov  9 11:40 .bashrc
+drwx------ 2 mehmet mehmet 4096 Nov  9 11:41 .cache
+-rw-r--r-- 1 mehmet mehmet    0 Feb 23 22:34 .motd_shown
+-rw-r--r-- 1 mehmet mehmet  807 Nov  9 11:40 .profile
+-rw-r--r-- 1 mehmet mehmet    0 Nov  9 11:42 .sudo_as_admin_successful
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:05 a
+mehmet@MEHMET-KARA:~$ ls -t
+a
+mehmet@MEHMET-KARA:~$ ls -lt
+total 4
+drwxr-xr-x 2 mehmet mehmet 4096 Feb 23 23:05 a
+mehmet@MEHMET-KARA:~$

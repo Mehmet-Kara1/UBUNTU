@@ -1,0 +1,142 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ mkdir myproject
+mehmet@MEHMET-KARA:~$ cd myproject
+mehmet@MEHMET-KARA:~/myproject$ cd
+mehmet@MEHMET-KARA:~$ mkdir -p myproject/A/B
+mehmet@MEHMET-KARA:~$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~$ ls
+abc      dosya           gizliklasor2  klas3    myfile1    ubuntukodlar.txt
+birinci  dosyaolusturur  klas2         klasor1  myproject
+mehmet@MEHMET-KARA:~$ cd myproject
+mehmet@MEHMET-KARA:~/myproject$ ls
+A
+mehmet@MEHMET-KARA:~/myproject$ mkdir B
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ cd A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+B
+mehmet@MEHMET-KARA:~/myproject/A$ rmdir B
+mehmet@MEHMET-KARA:~/myproject/A$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+mehmet@MEHMET-KARA:~/myproject/A$ mkdir C D
+mehmet@MEHMET-KARA:~/myproject/A$ touch 1.txt
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ cd C
+mehmet@MEHMET-KARA:~/myproject/A/C$ touch 2.py 3.pdf
+mehmet@MEHMET-KARA:~/myproject/A/C$ ls
+2.py  3.pdf
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd ..
+mehmet@MEHMET-KARA:~/myproject/A$ cd D
+mehmet@MEHMET-KARA:~/myproject/A/D$ cd ..
+mehmet@MEHMET-KARA:~/myproject/A$ cd C
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd ../D
+mehmet@MEHMET-KARA:~/myproject/A/D$ mkdir H
+mehmet@MEHMET-KARA:~/myproject/A/D$ cd H
+mehmet@MEHMET-KARA:~/myproject/A/D/H$ touch 4.py
+mehmet@MEHMET-KARA:~/myproject/A/D/H$ ls
+4.py
+mehmet@MEHMET-KARA:~/myproject/A/D/H$ cd
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ CD ..
+CD: command not found
+mehmet@MEHMET-KARA:~/myproject/B$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ rmdir B
+mehmet@MEHMET-KARA:~/myproject$ mkdir -p B/E
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E
+mehmet@MEHMET-KARA:~/myproject/B$ mkdir F G
+mehmet@MEHMET-KARA:~/myproject/B$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  G
+mehmet@MEHMET-KARA:~/myproject/B$ cd E
+mehmet@MEHMET-KARA:~/myproject/B/E$  touch 5 6 7
+mehmet@MEHMET-KARA:~/myproject/B/E$ ls
+5  6  7
+mehmet@MEHMET-KARA:~/myproject/B/E$ cd../F 8.py
+-bash: cd../F: No such file or directory
+mehmet@MEHMET-KARA:~/myproject/B/E$ cd ../F
+mehmet@MEHMET-KARA:~/myproject/B/F$ touch 8.py
+mehmet@MEHMET-KARA:~/myproject/B/F$ ls
+8.py
+mehmet@MEHMET-KARA:~/myproject/B/F$ cd ../G
+mehmet@MEHMET-KARA:~/myproject/B/G$ touch 9.pdf
+mehmet@MEHMET-KARA:~/myproject/B/G$ cd ../..
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ tree
+Command 'tree' not found, but can be installed with:
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+sudo apt  install tree  # version 2.0.2-1
+See 'snap info tree' for additional versions.
+mehmet@MEHMET-KARA:~/myproject$ cd
+mehmet@MEHMET-KARA:~$ See 'snap info tree' for additional versions.
+Command 'See' not found, did you mean:
+  command 'tee' from deb coreutils (8.32-4.1ubuntu1)
+  command 'ree' from deb ree (1.4.1-1)
+  command 'see' from deb mailcap (3.70+nmu1ubuntu1)
+  command 'pee' from deb moreutils (0.66-1)
+Try: sudo apt install <deb name>
+mehmet@MEHMET-KARA:~$ sudo snap install tree  # version 1.8.0+pkg-3fd6
+[sudo] password for mehmet:
+tree 1.8.0+pkg-3fd6 from 林博仁(Buo-ren, Lin) (brlin) installed
+mehmet@MEHMET-KARA:~$ tree
+.
+├── abc
+├── birinci
+│   └── ikinci
+│       ├── alpha
+│       └── ucuncu
+├── dosya
+│   ├── A
+│   │   └── B
+│   │       └── abc.txt
+│   ├── birinci.txt
+│   ├── ikinci.py
+│   ├── python.py
+│   ├── text.txt
+│   └── ucuncu.ipynb
+├── dosyaolusturur
+├── gizliklasor2
+├── klas2
+├── klas3
+├── klasor1
+├── myfile1
+├── myproject
+│   ├── A
+│   │   ├── 1.txt
+│   │   ├── C
+│   │   │   ├── 2.py
+│   │   │   └── 3.pdf
+│   │   └── D
+│   │       └── H
+│   │           └── 4.py
+│   └── B
+│       ├── E
+│       │   ├── 5
+│       │   ├── 6
+│       │   └── 7
+│       ├── F
+│       │   └── 8.py
+│       └── G
+│           └── 9.pdf
+├── snap
+│   └── tree
+│       ├── 18
+│       ├── common
+│       └── current -> 18
+└── ubuntukodlar.txt
+
+28 directories, 16 files
+mehmet@MEHMET-KARA:~$  clear

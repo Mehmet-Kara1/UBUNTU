@@ -1,0 +1,129 @@
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ ls
+A  birinci  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+a  dosya    gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ cd A
+mehmet@MEHMET-KARA:~/A$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/A$ ls
+B
+mehmet@MEHMET-KARA:~/A$ cd B
+mehmet@MEHMET-KARA:~/A/B$ ls
+C
+mehmet@MEHMET-KARA:~/A/B$ cd C
+mehmet@MEHMET-KARA:~/A/B/C$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/A/B/C$ ls
+D
+mehmet@MEHMET-KARA:~/A/B/C$ cd D
+mehmet@MEHMET-KARA:~/A/B/C/D$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/A/B/C/D$ ls
+mehmet@MEHMET-KARA:~/A/B/C/D$ rmdir D
+rmdir: failed to remove 'D': No such file or directory
+mehmet@MEHMET-KARA:~/A/B/C/D$ cd ..
+mehmet@MEHMET-KARA:~/A/B/C$ ls
+D
+mehmet@MEHMET-KARA:~/A/B/C$ rmdir D
+mehmet@MEHMET-KARA:~/A/B/C$ ls
+mehmet@MEHMET-KARA:~/A/B/C$ cd ..
+mehmet@MEHMET-KARA:~/A/B$ pwd
+/home/mehmet/A/B
+mehmet@MEHMET-KARA:~/A/B$ ls
+C
+mehmet@MEHMET-KARA:~/A/B$ rmdir C
+mehmet@MEHMET-KARA:~/A/B$ ls
+mehmet@MEHMET-KARA:~/A/B$ cd ..
+mehmet@MEHMET-KARA:~/A$ rmdir B
+mehmet@MEHMET-KARA:~/A$ ls
+mehmet@MEHMET-KARA:~/A$ rmdir A
+rmdir: failed to remove 'A': No such file or directory
+mehmet@MEHMET-KARA:~/A$ cd ..
+mehmet@MEHMET-KARA:~$ rmdir A
+mehmet@MEHMET-KARA:~$ ls
+a        dosya           gizliklasor2  klas3    myfile1
+birinci  dosyaolusturur  klas2         klasor1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ pwd
+/home/mehmet
+mehmet@MEHMET-KARA:~$ mkdir -p A/B
+mehmet@MEHMET-KARA:~$ ls
+A  birinci  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+a  dosya    gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ cd A
+mehmet@MEHMET-KARA:~/A$ ls
+B
+mehmet@MEHMET-KARA:~/A$ cd
+mehmet@MEHMET-KARA:~$ rmdir A
+rmdir: failed to remove 'A': Directory not empty
+mehmet@MEHMET-KARA:~$ rm -rf A
+mehmet@MEHMET-KARA:~$ ls
+a        dosya           gizliklasor2  klas3    myfile1
+birinci  dosyaolusturur  klas2         klasor1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ cd a
+mehmet@MEHMET-KARA:~/a$ ls
+mehmet@MEHMET-KARA:~/a$ ls
+first.txt
+mehmet@MEHMET-KARA:~/a$ rm first.txt
+mehmet@MEHMET-KARA:~/a$ ls
+mehmet@MEHMET-KARA:~/a$ touch text1.py test2.txt
+mehmet@MEHMET-KARA:~/a$ ls
+test2.txt  text1.py
+mehmet@MEHMET-KARA:~/a$ rm text1.py text2.txt
+rm: cannot remove 'text2.txt': No such file or directory
+mehmet@MEHMET-KARA:~/a$ rm test2.txt text1.py
+rm: cannot remove 'text1.py': No such file or directory
+mehmet@MEHMET-KARA:~/a$ rm test2.txt  text1.py
+rm: cannot remove 'test2.txt': No such file or directory
+rm: cannot remove 'text1.py': No such file or directory
+mehmet@MEHMET-KARA:~/a$ ls
+mehmet@MEHMET-KARA:~/a$ touch test1.txt test2.py
+mehmet@MEHMET-KARA:~/a$ ls
+test1.txt  test2.py
+mehmet@MEHMET-KARA:~/a$ cd ..
+mehmet@MEHMET-KARA:~$ rmdir  a
+rmdir: failed to remove 'a': Directory not empty
+mehmet@MEHMET-KARA:~$ rm -rf a
+mehmet@MEHMET-KARA:~$ ls
+birinci  dosyaolusturur  klas2  klasor1  ubuntukodlar.txt
+dosya    gizliklasor2    klas3  myfile1
+mehmet@MEHMET-KARA:~$ mkdir abc
+mehmet@MEHMET-KARA:~$ sl
+Command 'sl' not found, but can be installed with:
+sudo apt install sl
+mehmet@MEHMET-KARA:~$ ls
+abc      dosya           gizliklasor2  klas3    myfile1
+birinci  dosyaolusturur  klas2         klasor1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ cd abc
+mehmet@MEHMET-KARA:~/abc$ mkdir a1 a2 b1 b2 c1 c2
+mehmet@MEHMET-KARA:~/abc$ ls
+a1  a2  b1  b2  c1  c2
+mehmet@MEHMET-KARA:~/abc$ rm -rf a*
+mehmet@MEHMET-KARA:~/abc$ ls
+b1  b2  c1  c2
+mehmet@MEHMET-KARA:~/abc$ rm -rf *
+mehmet@MEHMET-KARA:~/abc$ ls
+mehmet@MEHMET-KARA:~/abc$ cd ..
+mehmet@MEHMET-KARA:~$ cd abc
+mehmet@MEHMET-KARA:~/abc$
+mehmet@MEHMET-KARA:~/abc$ ls
+mehmet@MEHMET-KARA:~/abc$ ls -a
+.  ..
+mehmet@MEHMET-KARA:~/abc$ cd
+mehmet@MEHMET-KARA:~$ ls -a
+.              .cache                     abc             klas2
+..             .gizliklasor1              birinci         klas3
+.bash_history  .motd_shown                dosya           klasor1
+.bash_logout   .profile                   dosyaolusturur  myfile1
+.bashrc        .sudo_as_admin_successful  gizliklasor2    ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ rmdir .gizliklasor1
+mehmet@MEHMET-KARA:~$ ls
+abc      dosya           gizliklasor2  klas3    myfile1
+birinci  dosyaolusturur  klas2         klasor1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ ls -a
+.              .cache                     birinci         klas3
+..             .motd_shown                dosya           klasor1
+.bash_history  .profile                   dosyaolusturur  myfile1
+.bash_logout   .sudo_as_admin_successful  gizliklasor2    ubuntukodlar.txt
+.bashrc        abc                        klas2
+mehmet@MEHMET-KARA:~$

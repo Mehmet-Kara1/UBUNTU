@@ -1,0 +1,137 @@
+mehmet@MEHMET-KARA:~/myproject/B/E$ pwd
+/home/mehmet/myproject/B/E
+mehmet@MEHMET-KARA:~/myproject/B/E$ cd
+mehmet@MEHMET-KARA:~$   cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ cd A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ cp 1.txt 2.txr
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  2.txr  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ mv 2.txr ../B
+mehmet@MEHMET-KARA:~/myproject/A$ cd ../B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+2.txr  E  F  G  papatya.txt
+mehmet@MEHMET-KARA:~/myproject/B$ cd ../A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  D
+mehmet@MEHMET-KARA:~/myproject/A$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ mv B/2.txr A/Ctest11.txt
+mehmet@MEHMET-KARA:~/myproject$ burda adını test11.txt olarak değiştirdim kopyalarken
+burda: command not found
+mehmet@MEHMET-KARA:~/myproject$ cd A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  Ctest11.txt  D
+mehmet@MEHMET-KARA:~/myproject/A$ cd C
+mehmet@MEHMET-KARA:~/myproject/A/C$ LS
+LS: command not found
+mehmet@MEHMET-KARA:~/myproject/A/C$ ls
+2.py  3.pdf  patpat.txt  python.py
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd../..
+-bash: cd../..: No such file or directory
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd ../ ..
+-bash: cd: too many arguments
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd .. ..
+-bash: cd: too many arguments
+mehmet@MEHMET-KARA:~/myproject/A/C$ cd ..
+mehmet@MEHMET-KARA:~/myproject/A$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ mv B/2.txr A/C test11.txt
+mv: target 'test11.txt' is not a directory
+mehmet@MEHMET-KARA:~/myproject$ cd A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  Ctest11.txt  D
+mehmet@MEHMET-KARA:~/myproject/A$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ mv B/ Ctest11.txt A/C/test11.txt
+mv: target 'A/C/test11.txt' is not a directory
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  G  papatya.txt
+mehmet@MEHMET-KARA:~/myproject/B$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ mv B/Ctest11.txt A/C/test11.txt
+mv: cannot stat 'B/Ctest11.txt': No such file or directory
+mehmet@MEHMET-KARA:~/myproject$ mv A/Ctest11.txt B/C/test11.txt
+mv: cannot move 'A/Ctest11.txt' to 'B/C/test11.txt': No such file or directory
+mehmet@MEHMET-KARA:~/myproject$ ls
+A  B
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  G  papatya.txt
+mehmet@MEHMET-KARA:~/myproject/B$ cd
+mehmet@MEHMET-KARA:~$ mv myproject/B/G myproject/A/kpy
+mehmet@MEHMET-KARA:~$ myproject/A
+-bash: myproject/A: Is a directory
+mehmet@MEHMET-KARA:~$ cd myproject/A
+mehmet@MEHMET-KARA:~/myproject/A$ ls
+1.txt  C  Ctest11.txt  D  kpy
+mehmet@MEHMET-KARA:~/myproject/A$ ..
+..: command not found
+mehmet@MEHMET-KARA:~/myproject/A$ cd ..
+mehmet@MEHMET-KARA:~/myproject$ mv A adana
+mehmet@MEHMET-KARA:~/myproject$ cd A
+-bash: cd: A: No such file or directory
+mehmet@MEHMET-KARA:~/myproject$ cd A
+-bash: cd: A: No such file or directory
+mehmet@MEHMET-KARA:~/myproject$ ls
+B  adana
+mehmet@MEHMET-KARA:~/myproject$ # aynı klasorde path(yol) belirmeye
+gerek yok A nın ismini adana olarak olarak değiştirdik
+mehmet@MEHMET-KARA:~/myproject$ cd
+mehmet@MEHMET-KARA:~$ myproject/
+B/     adana/
+mehmet@MEHMET-KARA:~$ myproject/cd
+-bash: myproject/cd: No such file or directory
+mehmet@MEHMET-KARA:~$ mv myproject/B myp
+mehmet@MEHMET-KARA:~$ mv myproject/B myp
+myp/       myproject/
+mehmet@MEHMET-KARA:~$ mv myproject/B myp
+myp/       myproject/
+mehmet@MEHMET-KARA:~$ mv myproject/B  myproject/bursa
+mv: cannot stat 'myproject/B': No such file or directory
+mehmet@MEHMET-KARA:~$ myproject/
+-bash: myproject/: Is a directory
+mehmet@MEHMET-KARA:~$ myproject/
+-bash: myproject/: Is a directory
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas3    myp        ubuntukodlar.txt
+birinci  gizliklasor2    klasor1  myproject
+dosya    klas2           myfile1  snap
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+adana
+mehmet@MEHMET-KARA:~/myproject$ mv ../myb ../mypoject/B
+mv: cannot stat '../myb': No such file or directory
+mehmet@MEHMET-KARA:~/myproject$ mv ../myp ../mypoject/B
+mv: cannot move '../myp' to '../mypoject/B': No such file or directory
+mehmet@MEHMET-KARA:~/myproject$ ls
+adana
+mehmet@MEHMET-KARA:~/myproject$ cd ..
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas3    myp        ubuntukodlar.txt
+birinci  gizliklasor2    klasor1  myproject
+dosya    klas2           myfile1  snap
+mehmet@MEHMET-KARA:~$ mv myp myproject/B
+mehmet@MEHMET-KARA:~$ ls
+abc      dosyaolusturur  klas3    myproject
+birinci  gizliklasor2    klasor1  snap
+dosya    klas2           myfile1  ubuntukodlar.txt
+mehmet@MEHMET-KARA:~$ cd myproject/
+mehmet@MEHMET-KARA:~/myproject$ ls
+B  adana
+mehmet@MEHMET-KARA:~/myproject$
+mehmet@MEHMET-KARA:~/myproject$ cd B
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  papatya.txt
+mehmet@MEHMET-KARA:~/myproject/B$ mv papatya.txt gul
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  gul
+mehmet@MEHMET-KARA:~/myproject/B$ mv gul gul.txt
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  gul.txt
+mehmet@MEHMET-KARA:~/myproject/B$ mv ./gul.txt ./çiçek.txt
+mehmet@MEHMET-KARA:~/myproject/B$ ls
+E  F  çiçek.txt
+mehmet@MEHMET-KARA:~/myproject/B$
